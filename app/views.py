@@ -20,17 +20,15 @@ def home():
     return render_template('home.html')
     
     
-@app.route('/profile')
-def profile():
-    """My profile."""
-    jdate=format_date_joined()
-    return render_template('profile.html', date=jdate)
+@app.route('/how_it_works')
+def how_it_works():
+    return render_template('how_it_works.html')
 
 
 @app.route('/about/')
 def about():
     """Render the website's about page."""
-    return render_template('about.html', name="Doneil Scotland")
+    return render_template('about.html')
 
 
 ###

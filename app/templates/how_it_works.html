@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+    {% extends "base.html" %}
+    
+{% block main %}
+<br>
+<br>
+<div class="post">
+  <center><h2>What exactly did Danimya Tech do?</h2></center><br>
+    <p>We created a game environment using Unity that mimics a boss fight in a typical combat game.
+    This boss-fight setting served as the proof of concept of our AI enemy who can learn to play a game given a set of inputs. about the gaming environment.
+This means that AI enemies no longer need to be explicitly told what to do, and what not to do,  but rather, 
+can be provided with some obsevrations about a game environment, actions that can be performed and an opponent.
+ Based on the actions the AI agent makes it is either rewarded or punished. The agent, in time, will associate its actions with these rewards
+ and will act in such a way as to maximise its rewards. This process is called 'training'. Because of this the enemy will then learn how to play the game. 
+This benefits you, the player, because you will then have a more diverse and challenging gaming experience.</p>
+
+
+<center><h2>Our AI enemy before it was trained</h2></center>
+<P>The clip below shows our AI enemy, the "Monkey King", in the early stages of training. </P>
+<div>
+    <center>
+<video controls  width="300" height="300"
+src="/static/before training.mp4">
+</video>
+</center>
+</div>
+<br>
+<center><h2>Our AI enemy after some training</h2></center>
+<P>The clip below shows our AI enemy, the "Monkey King", in the later stages of training. As you can see the AI enemy's decision making has improved. </P>
+<div>
+    <center>
+<video controls  width="300" height="300"
+src="/static/After training monkey king (cut).mp4">
+</video>
+</center>
+</div>
+</div>
+{% endblock %}
+
+</body>
+</html>

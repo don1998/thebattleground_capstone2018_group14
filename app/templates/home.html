@@ -1,7 +1,39 @@
 {% extends "base.html" %}
 
 {% block main %}
-<h1>Flask Starter Code</h1>
-<p class="lead">Use this starter template for your Flask apps as a way to quickly start any new project.<br>
-All you get are these files and mostly barebones HTML/CSS files.</p>
+
+
+<div class="post">
+  <br>
+  <br>
+  <div class="banner">
+  <img src="/static/The-Escape-Background.jpg" height="25%" width=100%>
+  </div>
+  <br>
+  <br>
+  <h2><center>Welcome! Are you a gaming aficionado? Or are you just a cursory gamer? Neither?</center></h2>
+    <p>
+Well,  we invite you to join us on our adventure,  to create the 'perfect' AI enemy.
+On this journey, we endeavour to:
+explain how we have created the 'perfect' AI enemy, 
+and how this will impact the future of gaming.
+Let's get started with some basic information.</p>
+<br>
+<br>
+<center><h2>What is AI?</h2></center>
+<p>
+AI stands for Artificial Intelligence.
+This is the notion that technological devices such as computers can be trained to think, in approximately the same way that living creatures do. 
+One way to test this concept, is that providing a device with a set of data, it can make decisions, outside of what it was coded to do. 
+</p>
+<br>
+<br>
+<center><h2>How will AI impact me, and my gaming experience?</h2></center>
+<p>
+In short order, you could soon be playing games, with non-human components that are able to think, and perform actions, 
+using logic that has not been hard-coded. This in turn will allow for the enemies in games to pose a greater challenge, 
+allowing for a richer gaming experience.
+More information can be found on our <a href="{{ url_for('how_it_works') }}">How it works </a> page.
+</p> <hr>
+</div>
 {% endblock %}

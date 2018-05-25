@@ -1,6 +1,53 @@
 {% extends "base.html" %}
 
 {% block main %}
-<h1>About</h1>
-<p>This webpage is about {{ name }}.</p>
+
+<body>
+
+<center><h2>Meet The Team</h2></center>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <center><img src="/static/maleavatar.jpg" alt="Doneil" style="width:50%"></center>
+      <div class="container">
+        <h2>Doneil Scotland</h2>
+        <p class="title"></p>
+        <p>I am a finalising Computer Science student at the University of the West Indies Mona.</p>
+        <p>doneilscotland98@gmail.com</p>
+        <center><p><button class="button">Contact</button></p></center>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <center><img src="/static/kim.jpg" alt="Kimberly" style="width:50%"></center>
+      <div class="container">
+        <h2>Kimberly Simmonds</h2>
+        <p class="title"></p>
+        <p>Description of the team member.</p>
+        <p>ksimmonds92@gmail.com</p>
+        <center><p><button class="button">Contact</button></p></center>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <center><img src="/static/loya.jpg" alt="Loya" style="width:50%"></center>
+      <div class="container">
+        <h2>Loya Haughton</h2>
+        <p class="title"></p>
+        <p>Description of the team member.</p>
+        <p>loya.haughton@gmail.com</p>
+        <center><p><button class="button">Contact</button></p></center>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
 {% endblock %}
